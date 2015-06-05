@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title></title>
+
+    <link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="javascripts/all.js" type="text/javascript"></script>
+  </head>
+
+  <body class="index">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-wagon" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+<a class="navbar-brand" href="./">            <img src="images/logo.svg" />
+</a>        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+<a href="/pricing.html">                <i class="fa fa-dollar"></i> Home
+</a>            </li>
+            <li>
+<a href="contact.html">                <i class="fa fa-envelope-o"></i> Contact
+</a>            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Follow-us <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://www.facebook.com/lewagonformation"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                <li><a href="https://twitter.com/lewagonparis"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin-square"></i> Linkedin</a></li>
+              </ul>
+            </li>
+            <li><a href="#" data-toggle="modal" data-target="#subscribe-modal" class="btn">Order now</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="banner">
+<h1> Styl.us </h1>
+<div class="slogan">
+  <h2> Turn your pen into you best friend </h2>
+  <h2> Make every line you write count..</h2>
+</div>
+
+<a class="btn btn-primary" href="#">GET YOUR STYLUS</a>
+</div>
+
+<div class="bg-blue">
+<div class="container">
+  <div class="row">
+    <div = "col-lg-12">
+      <div class="card">
+        <img src="images/paper.svg" />
+        <h3> Natural writing</h3>
+        <p>Don't change your habits, write with a pen on <strong>paper notebooks</strong></p>
+      </div>
+    </div>
+    <div = "col-lg-12">
+      <div class="card">
+        <img src="images/computer.svg" />
+        <h3> Sync. copy</h3>
+        <p>Stylus instantaneously copy your text on your computer, <strong>in real-time</strong> </p>
+      </div>
+    </div>
+    <div = "col-lg-12">
+      <div class="card">
+        <img src="images/analytics.svg" />
+        <h3> Analytics</h3>
+        <p>Get feedbacks on the way you write, your favorite words, your <strong>frequent mistakes</strong> </p>
+      </div>
+    </div>
+    <div = "col-lg-12">
+      <div class="card">
+        <img src="images/data.svg" />
+        <h3> Storing your texts</h3>
+        <p>Everything line writen with your stylus is stored in the cloud, so that  <strong>it's never lost</strong> </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="bg-white text-center">
+  <h2>Get news from stylus</h2>
+  <p>Leave us your mail and get stylus news</p>
+  <form action ="\" class="form-inline">
+    <input type="email" class="form-control" placeholder="paul@gmail.com">
+    <input type="submit" value="subscribe" class="btn btn-success">
+  </form>
+</div>
+<div id="map" style="width: 100%; height: 400px;"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">
+var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+var myOptions = {
+  zoom: 16,
+  center: myLatlng,
+  scrollwheel: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+};
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+var marker = new google.maps.Marker({
+  position: myLatlng,
+  map: map,
+  title: "You are here!"
+});
+  </script>
+</div>
+<div id="footer">
+<ul class = list-inline>
+  <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+  <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+  <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+</ul>
+<p>Stylus is a fictive product by LeWagon</p>
+
+  </body>
+</html>
